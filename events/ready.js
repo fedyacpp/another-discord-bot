@@ -16,7 +16,8 @@ module.exports = {
       } 
       if (commandFiles.length === 1) {
         booting = `Booting with ${commandFiles.length} command`;
-      } else {
+      }
+      if (commandFiles.length >= 2) {
         booting = `Booting with ${commandFiles.length} commands`;
       }
 
