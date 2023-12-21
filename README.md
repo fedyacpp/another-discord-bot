@@ -77,6 +77,13 @@ node deploy-commands.js
 
 everytime, so your slash commands will be registered in Discord.
 
+## Warnings
+
+Stable Diffusion XL from VisionCraft very sketchy and blurry, idk is it provider or SD issue, but we have what we have
+
+![image](https://github.com/fedyacpp/another-discord-bot/assets/125286674/713afce2-585d-4634-b947-42e5b29efc51)
+![JAXtmYB](https://github.com/fedyacpp/another-discord-bot/assets/125286674/f38007de-bf3d-46a7-ad49-e10377788ff9)
+
 ## Contributing
 
 Contributions are welcome! Feel free to open a pull request or an issue if you have ideas for improvements or have found a bug.
