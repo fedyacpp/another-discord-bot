@@ -1,42 +1,41 @@
-# Discord Bot
+# Discord Бот
 
-This Discord bot is built using [discord.js v14](https://discord.js.org/#/docs/main/stable/general/welcome), a powerful library to interface with the Discord API. It features slash commands and can be easily extended with additional functionality.
+Привет, вот наш Discord ботик! Потрошить его можешь с помощью [discord.js v14](https://discord.js.org/#/docs/main/stable/general/welcome) – крутая тема для связи с Discord API. Такая вот палочка-выручалочка с кучей слеш-команд, расширять функционал - просто плюнуть.
 
-## Features
+## Что он умеет?
 
-- Slash commands implementation
-- Global command deployment
-- Latency measurement with embedded responses in Russian language
-- `.env` file environment variable configuration
+- Щелкает слеш-командами как орешки
+- Измеряет твою терпеливость (пинг) и отвечает по-русски
+- Ваяет картинки через Stable Diffusion XL (спасибо, [VisionCraft](https://t.me/visioncraft_channel))
+- Жонглирует переменными окружения в файлике `.env`
 
-## Getting Started
+## Как начать
 
-To get started with this bot, follow these instructions:
+Если хочешь приручить этого зверька, то тебе сюда:
 
-### Prerequisites
+### Что нужно иметь:
+- Node.js v16.x и выше под боком
+- Дискорд акаунт и зареганного бота (да, без шуток)
+- Серверок (гильдию), где ты крутой админ, чтобы добавить и потестить бота
 
-- Node.js v16.x or higher
-- A Discord account and a registered Discord bot
-- A server (guild) where you have administrative privileges to add and test the bot
+### Первые шаги
 
-### Installation
-
-1. **Clone the repository**
+1. **Подселяй репозиторий**
 
    ```bash
    git clone https://github.com/fedyacpp/another-discord-bot.git
    cd discord-bot
    ```
 
-2. **Install dependencies**
+2. **Ставь зависимости**
 
    ```bash
    npm install
    ```
 
-3. **Configure your environment variables**
+3. **Настрой свои переменные окружения**
 
-   Add your Discord Token, Client Id and [VisionCraft](https://t.me/visioncraft_channel) API key to `.env` file:
+   Кинь в файлик `.env` свои секретики – токен дискорда, ID клиента и ключик API [VisionCraft](https://t.me/visioncraft_channel):
 
    ```plaintext
    DISCORD_TOKEN=your-bot-token
@@ -44,48 +43,55 @@ To get started with this bot, follow these instructions:
    DIFFUSION_API_KEY=your-visioncraft-key
    ```
 
-4. **Deploy the commands**
+4. **Развертывание команд**
 
-   You can deploy commands globally or to a specific guild. For development, it's recommended to deploy to a single guild for faster updates. In this case commands updates globally.
+   Зарегистрируй свои слеш команды где душе угодно: по всему миру или для конкретной гильдии. Для разрабов - регистрируйте на одной гильдии, ибо быстрее. У меня тут все глобально.
 
    ```bash
    node deploy-commands.js
    ```
 
-### Running the bot
+### Запускаем бота
 
-If you still haven't deployed commands, do it by running following piece of code, else skip this step:
+Если ты еще не запустил команды, беги и выполни код:
 
 ```bash
 node deploy-commands.js
 ```
 
-To start the bot, run the following command in your terminal:
+А теперь чтоб оживить бота, гони в терминал:
 
 ```bash
 node index.js
 ```
 
-The bot should now be online and ready to receive commands. Test it by typing `/ping` in any server the bot has been added to.
+Вот теперь он живой! Проверь написав `/ping` на любом сервере, где бот в гостях.
 
-When new command added, you'll need to 
+Когда новые команды наплодишь, не забывай кормить их в дискорд:
 
 ```bash
 node deploy-commands.js
 ```
 
-everytime, so your slash commands will be registered in Discord.
+А то они там в игнор могут уйти.
 
-## Contributing
+## Внимание
 
-Contributions are welcome! Feel free to open a pull request or an issue if you have ideas for improvements or have found a bug.
+Stable Diffusion XL от VisionCraft смазанный как Пикассо на вечеринке, че за фигня – не ведаю, то ли провайдер накосячил, то ли SD через одно место. Да и ладно, картинки то рисует!
 
-## License
+![image](https://github.com/fedyacpp/another-discord-bot/assets/125286674/713afce2-585d-4634-b947-42e5b29efc51)
+![JAXtmYB](https://github.com/fedyacpp/another-discord-bot/assets/125286674/f38007de-bf3d-46a7-ad49-e10377788ff9)
 
-This bot is released under the [MIT License](LICENSE).
+## Помощь в проекте
 
-## Acknowledgements
+Руки помощи всегда в цене! Если есть идеи или нашел баг, кидай pull request или свисти в issue.
 
-- [Discord.js Guide](https://discordjs.guide/)
-- [Discord API Documentation](https://discord.com/developers/docs/intro)
-- All contributors who participate in the development and improvement of this bot
+## Лицуха
+
+Этого бота мы отпускаем на волю по [лицензии MIT](LICENSE).
+
+## Благодарности и поклоны
+
+- [Руководство по Discord.js](https://discordjs.guide/) – за знания
+- [Документация Discord API](https://discord.com/developers/docs/intro) – за мудрость
+- Всем, кто кодил и улучшал – респект и уважуха!
