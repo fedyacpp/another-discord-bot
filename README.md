@@ -36,11 +36,12 @@ To get started with this bot, follow these instructions:
 
 3. **Configure your environment variables**
 
-   Add your Discord Token and Client Id of your bot to `.env` file:
+   Add your Discord Token, Client Id and [VisionCraft](https://t.me/visioncraft_channel) API key to `.env` file:
 
    ```plaintext
    DISCORD_TOKEN=your-bot-token
    DISCORD_CLIENT_ID=your-bot-client-id
+   DIFFUSION_API_KEY=your-visioncraft-key
    ```
 
 4. **Deploy the commands**
@@ -53,6 +54,12 @@ To get started with this bot, follow these instructions:
 
 ### Running the bot
 
+If you still haven't deployed commands, do it by running following piece of code, else skip this step:
+
+```bash
+node deploy-commands.js
+```
+
 To start the bot, run the following command in your terminal:
 
 ```bash
@@ -60,6 +67,14 @@ node index.js
 ```
 
 The bot should now be online and ready to receive commands. Test it by typing `/ping` in any server the bot has been added to.
+
+When new command added, you'll need to 
+
+```bash
+node deploy-commands.js
+```
+
+everytime, so your slash commands will be registered in Discord.
 
 ## Contributing
 
