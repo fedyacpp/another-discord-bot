@@ -11,7 +11,7 @@ module.exports = {
         .setRequired(true))
     .addIntegerOption(option =>
       option.setName('image_count')
-        .setDescription('Количество генерируемых изображений (up to 2).')
+        .setDescription('Количество генерируемых изображений (максимум 2).')
         .setRequired(false))
     .addIntegerOption(option =>
       option.setName('height')
