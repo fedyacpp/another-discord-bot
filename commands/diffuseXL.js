@@ -55,12 +55,17 @@ module.exports = {
           }).catch(error => {
             console.error('Error generating images:', error);
             let errorMessage = 'Произошла ошибка при генерации изображения.';
-          
+            
             if (error.response && error.response.status) {
               errorMessage += ` Код ошибки: ${error.response.status}`;
             }
+            
+            const errorEmbed = new EmbedBuilder()
+              .setColor(0xff0000)
+              .setTitle('Ошибка')
+              .setDescription(errorMessage)
           
-            interaction.editReply(errorMessage);
+            interaction.editReply({ embeds: [errorEmbed] });
           });
         }
       }
