@@ -7,6 +7,7 @@ This Discord bot is built using [discord.js v14](https://discord.js.org/#/docs/m
 - Slash commands implementation
 - Global command deployment
 - Latency measurement with embedded responses in Russian language
+- Image generation via Stable Diffusion XL (thanks to [VisionCraft](https://t.me/visioncraft_channel))
 - `.env` file environment variable configuration
 
 ## Getting Started
