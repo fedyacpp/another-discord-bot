@@ -6,9 +6,11 @@ module.exports = {
     .setDescription('Отображает задержку между сервером и пользователем.'),
 
   async execute(interaction) {
+    const before = Date.now();
     await interaction.deferReply();
+    const after = Date.now();
 
-    const roundTripLatency = Date.now() - interaction.createdTimestamp;
+    const roundTripLatency = after - before;
 
     const apiLatency = Math.round(interaction.client.ws.ping);
 
