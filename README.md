@@ -74,7 +74,7 @@ When new command added, you'll need to
 node deploy-commands.js
 ```
 
-everytime, so your slash commands will be registered in Discord
+everytime, so your slash commands will be registered in Discord.
 
 ## Contributing
 
