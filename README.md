@@ -7,6 +7,7 @@
 - Щелкает слеш-командами как орешки
 - Измеряет твою терпеливость (пинг) и отвечает по-русски
 - Ваяет картинки через Stable Diffusion XL (спасибо, [VisionCraft](https://t.me/visioncraft_channel))
+- Общается с тобой в выделенном текстовом канале благодаря [NagaAI](https://discord.naga.ac)
 - Жонглирует переменными окружения в файлике `.env`
 
 ## Как начать
@@ -35,12 +36,13 @@
 
 3. **Настрой свои переменные окружения**
 
-   Кинь в файлик `.env` свои секретики – токен дискорда, ID клиента и ключик API [VisionCraft](https://t.me/visioncraft_channel):
+   Кинь в файлик `.env` свои секретики – токен дискорда, ID клиента, ключик API для [VisionCraft](https://t.me/visioncraft_channel) и [NagaAI](https://discord.naga.ac):
 
    ```plaintext
    DISCORD_TOKEN=your-bot-token
    DISCORD_CLIENT_ID=your-bot-client-id
    DIFFUSION_API_KEY=your-visioncraft-key
+   NAGA_API_TOKEN=your-naga-key
    ```
 
 4. **Развертывание команд**
@@ -76,6 +78,8 @@ node deploy-commands.js
 А то они там в игнор могут уйти.
 
 ## Внимание
+
+Пока что функционал в /settings реализован НЕ ВЕСЬ!
 
 Stable Diffusion XL от VisionCraft смазанный как Пикассо на вечеринке, че за фигня – не ведаю, то ли провайдер накосячил, то ли SD через одно место. Да и ладно, картинки то рисует!
 
