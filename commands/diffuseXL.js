@@ -31,7 +31,7 @@ module.exports = {
           const width = interaction.options.getInteger('width') || 1024;
           const token = process.env.DIFFUSION_API_KEY;
       
-          axios.post('https://visioncraftapi--vladalek05.repl.co/generate-xl', {
+          axios.post('https://visioncraft-aiapi.koyeb.app/', {
             model: 'sdxl-turbo',
             prompt: prompt,
             image_count: imageCount,
